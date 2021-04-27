@@ -15,4 +15,7 @@ The wave library has a builtin limit that it only allow pre-defined macro "__cpl
 
 
 
+The compilation is very straight-forward by adding normal boost install path to seach path by "-I". However, this demo uses a few wave/tool/cpp method for debugging . Therefore an extra include path of wave/tool. (note, this is wave library source, not from installed, therefore, it means you have to download source of wave library. This can be elimitated by removing some extra debugging output in try-catch just like normal example "quickstart" in wave)
 
+The linking is straight-forward by all wave and its dependency like this:
+ -lboost_wave -lboost_filesystem -lboost_thread -lboost_system -lpthread
